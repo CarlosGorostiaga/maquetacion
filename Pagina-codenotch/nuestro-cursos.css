@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: blue;
+    /* border: 1px solid blue; */
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.button {
+    /* border: 1px solid pink; */
+    /* background-color: black; */
+    color: black;
+    width: 400px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+
+}
+
+.foto1 {
+
+    /* border: 1px solid red; */
+    color: black;
+    width: 400px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+.a-image {
+    width: 20%;
+}
+
+
+.a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ---------------------------------------------- */
+
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 5px solid red; */
+    width: 100%;
+    height: 90vh;
+
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    /* border: 5px solid green; */
+    width: 100%;
+    height: 30%;
+
+}
+
+.texto {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    /* border: 5px solid red; */
+    background-color: black;
+    width: 50%;
+    height: 100%;
+
+
+
+}
+
+.texto1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 5px solid white; */
+    /* background-color: black; */
+    width: 35%;
+    height: 60%;
+
+    margin-top: 6%;
+    margin-left: 33%;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+
+}
+
+.texto2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 5px solid white; */
+    /* background-color: black; */
+    width: 90%;
+    margin-left: none;
+
+
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+
+}
+
+/* ------------------------------------------- */
+
+.padre-division {
+    display: flex;
+    flex-direction: row;
+    /* border: 5px solid violet; */
+    width: 100%;
+    height: 70%;
+}
+
+
+.hijo-division {
+    display: flex;
+    flex-direction: row;
+    /* border: 5px solid red; */
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+
+
+}
+
+.box1 {
+
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid red; */
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    color: white;
+
+    margin: auto;
+
+}
+
+.desarrollo1 {
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid white; */
+    /* background-color: black; */
+    width: 90%;
+    height: 10%;
+    color: white;
+
+    margin: auto;
+
+    font-family: 'Poppins', sans-serif;
+
+    color: black;
+
+
+}
+
+.desarrollo2{
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid white; */
+    /* background-color: black; */
+    width: 90%;
+    height: 15%;
+    color: white;
+
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+
+
+}
+
+.desarrollo3 {
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid white; */
+    /* background-color: black; */
+    width: 90%;
+    height: 35%;
+    color: white;
+
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    color: black;
+    font-style: italic;
+
+
+}
+
+/* ---------------------------------- */
+
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid red; */
+    background-color: black;
+    width: 100%;
+    height: 20vh;
+    gap: 5px;
+}
+
+
+.rs {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 2px solid white; */
+    height: 30%;
+
+    color: white;
+
+}
+
+.icons a {
+    /* display: flex; */
+    /* flex-direction: row;
+    justify-content: center; */
+    /* border: 2px solid white; */
+    /* background-color: black; */
+    height: 40%;
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.padre-iconos {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    /* border: 2px solid red; */
+
+    
+}
