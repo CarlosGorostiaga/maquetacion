@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="buscar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+</head>
+<section class="flex-container">
+    <a class="a-image" href="home.html"><img class="img" src="./imagenes/nocanceles3.png" alt="imagen de menu"></a>
+    <div class="button"><a class="a" href="home.html">
+            <h1>HOME</h1>
+        </a></div>
+    <div class="button"><a class="a" href="">
+            <h1>DESTINOS</h1>
+        </a></div>
+    <div class="button"><a class="a" href="buscar.html">
+            <h1>BUSCAR</h1>
+        </a></div>
+</section>
+
+<body>
+
+
+    <section class="flex-container1">
+        <div class="frame">
+
+            <form class="form">
+                <div>
+                    <input id="nombre" type="text" placeholder='Introduce tu nombre'>
+                </div>
+                <div>
+                    <input id="origen" type="text" placeholder='Origen'>
+                </div>
+                <div>
+                    <input id="destino" type="text" placeholder='Destino'>
+                </div>
+                <div>
+                    <input id="nViajeros" type="text" placeholder='Número de viajeros'>
+                </div>
+                <div>
+                    <input id="fecha" type="text" placeholder='Salida dd/mm/aa'>
+                </div>
+                <button type="button" onclick="solicitarInformacion()">Solicitar info</button>
+                <button type="button" onclick="filtrar()">Filtrar</button>
+                <div id="solicitudes">
+        
+                </div>
+
+        </div>
+    </section>
+
+
+    <section class="flex-container4">
+        <div class="container4">
+            <div class="padre-iconos">
+                <div class="icons"><a href="https://www.instagram.com"><img class="img" src="imagenes/instagram11.png"></a></div>
+            </div>
+            <div class="padre-iconos">
+                <div class="icons"><a href="https://www.facebook.com"><img class="img" src="imagenes/facebook111.png"></a></div>
+            </div>
+            <div class="padre-iconos">
+                <div class="icons"><a href="https://www.linkedin.com"><img class="img" src="imagenes/linkedin2.png"></a></div>
+            </div>
+            <div class="padre-iconos">
+                <div class="icons"><a href="https://www.whatsapp.com"><img class="img" src="imagenes/whatsapp.png"></a></div>
+            </div>
+        </div>
+        <div class="container4">
+            Copyright © 2010-2022 Charlie Styles . Todos los derechos reservados.
+        </div>
+
+    </section>
+
+    <script src="agenciaBuscar.js"></script>
+
+
+
+
+
+</body>
+
+</html>
