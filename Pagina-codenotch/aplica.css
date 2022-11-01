@@ -170,3 +170,14 @@
 
     
 }
+
+.formulario{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #0055ff;
+
+
+
+}
