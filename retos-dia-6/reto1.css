@@ -1,0 +1,50 @@
+/* ********** GRID ********** */
+
+
+.gridContainer{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 50%;
+
+}
+
+.a{
+    background-color: rgb(193, 243, 12);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+.b {
+    background-color: rgb(245, 133, 28);
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+.c {
+    background-color: orangered;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+.d {
+    background-color: red;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+.e {
+    background-color: blue;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+.f {
+    background-color: yellow;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
