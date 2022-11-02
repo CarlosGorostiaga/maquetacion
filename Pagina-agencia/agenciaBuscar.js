@@ -31,15 +31,12 @@ function solicitarInformacion() {
 function filtrar() {
     let arrayFlitrado = solicitudes.filter(
         function (solicitud) {
-            if (solicitud.destino.toLowerCase() == "mallorca" || solicitud.destino.toLowerCase() == "galicia" || solicitud.destino.toLowerCase() == "canarias") {
-                return true;
-            } else {
-                return false;
-            }
+            return (solicitud.destino.toLowerCase() == "mallorca" || solicitud.destino.toLowerCase() == "galicia" || solicitud.destino.toLowerCase() == "canarias")
+
         }
     )
     let lista = document.getElementById("solicitudes");
-
+    lista.innerHTML = "";
     arrayFlitrado.forEach(function (solicitud) {
         console.log(solicitud);
         lista.innerHTML += `<p>Nombre: ${solicitud.nombre} <br>  
