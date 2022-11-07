@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src=index.js></script>
+
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Peliculas-IMDB</title>
+    <link rel="shortcut icon" href="imagenes/IMDB_Logo_2016.svg.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="imagenes/IMDB_Logo_2016.svg.png" alt="" class="d-inline-block align-text-top"
+                    style="height:8vh">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="home.html">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="#">Link</a> -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!-- <li><a class="dropdown-item" href="form">Professionals</a></li> -->
+                            <li><a class="dropdown-item" href="profesionales.html">Profesionales</a></li>
+                            <li><a class="dropdown-item" href="peliculas.html">Peliculas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="home.html">Principal</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> -->
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-warning text-light" type="submit text-light">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="container bg-warning text-dark mt-3">
+
+        <h2 style="padding-left: 5px;">Introduce Datos necesarios para agregar una nueva Pelicula :</h2>
+    </div>
+
+    <!-- Container con cards de películas -->
+
+    <div class="container" id="moviesAre">
+
+
+    </div>
+
+
+    <!-- FORMULARIO -->
+    <div class="container bg-warning">
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Titulo</label>
+            <input type="text" class="form-control" id="titulo" placeholder="Titulo (Ejemplo: Matrix Revolution)">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Año de estreno</label>
+            <input type="text" class="form-control" id="lanzamiento" placeholder="Año de Lanzamiento (Ejemplo: 2010)">
+        </div>
+
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nacionalidad</label>
+            <input type="text" class="form-control" id="nationality" placeholder="Introduce el pais de origen de la pelicula...">
+        </div>
+
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Genero</label>
+            <input type="text" class="form-control" id="genre" placeholder="Accion, Comedia, Drama, Romance, Terror...">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Cartel de la pelicula</label>
+            <input type="text" class="form-control" id="movie_image" placeholder="Introduce la URL de una imagen">
+        </div>
+
+        <button type="button" class="btn btn-outline-dark" onclick="createNewMovie()">Enviar Info</button>
+
+        <br><br><br>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

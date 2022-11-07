@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>IMDB</title>
+    <link rel="shortcut icon" href="imagenes/IMDB_Logo_2016.svg.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="imagenes/IMDB_Logo_2016.svg.png" alt="" class="d-inline-block align-text-top"
+                    style="height: 8vh">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="#">Link</a> -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!-- <li><a class="dropdown-item" href="form">Professionals</a></li> -->
+                            <li><a class="dropdown-item" href="profesionales.html">Profesionales</a></li>
+                            <li><a class="dropdown-item" href="peliculas.html">Peliculas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="home.html">Principal</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li> -->
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-warning text-light" type="submit ">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <figure class="text-center bg-dark text-warning mt-5">
+            <h1 class="Home_title text-light " style="height: 8vh">Tu Cine en casa , IMDB </h1>
+        </figure>
+    </div>
+
+
+    <!-- *************************************************** -->
+    <div class="container bg-warning mt-5">
+        <div class="separacion mt-5">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active mt-5">
+                        <div style="display: flex; align-items: center; justify-content: center;">
+                            <img style="height:620px ;width: 450px;margin-bottom:4% ;" class="d-block "
+                                src="./imagenes/Cadena_perpetua-187366518-large.jpg">
+                        </div>
+                    </div>
+                    <div class="carousel-item mt-5">
+                        <div style="display: flex; align-items: center; justify-content: center;">
+                            <img style="height:620px ;width: 450px;margin-bottom:4% ;" class="d-block "
+                                src="./imagenes/padrino.jpg">
+                        </div>
+                    </div>
+                    <div class="carousel-item mt-5">
+                        <div style="display: flex; align-items: center; justify-content: center;">
+                            <img style="height:620px ;width: 450px;margin-bottom:4% ;" class="d-block "
+                                src="./imagenes/Pulp_Fiction-210382116-mmed.jpg">
+                        </div>
+                    </div>
+                    <div class="carousel-item mt-5">
+                        <div style="display: flex; align-items: center; justify-content: center;">
+                            <img style="height:620px ;width: 450px;margin-bottom:4% ;" class="d-block "
+                                src="./imagenes/blade-runner-poster.jpg">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev bg-muted" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next bg-muted" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- ***************************************************** -->
+
+
+    <div class="container bg-dark text-light">
+
+        <h2 style="padding-left: 20px;">Destacado Hoy:</h2>
+    </div>
+
+    <!-- Container con cards de películas -->
+
+    <div class="container bg-warning text-light ">
+
+        <div class="row mt-8">
+
+            <div class="col-6">
+                <div class="card mt-1" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="imagenes/Cadena_perpetua-187366518-large.jpg" class="img-fluid rounded-start"
+                                alt="...">
+                        </div>
+                        <div class="col-md-8 bg-dark">
+                            <div class="card-body">
+                                <h5 class="card-title">Cadena Perpetua</h5>
+                                <p class="card-text">Andy Dufresne es encarcelado por matar a su esposa y al amante de
+                                    esta. Tras una dura adaptación, intenta mejorar las condiciones de la prisión y dar
+                                    esperanza a sus compañeros.</p>
+                                <p class="card-text"><small class="text-muted">Click para ver mas </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-1" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="imagenes/Pulp_Fiction-210382116-mmed.jpg" class="img-fluid rounded-start"
+                                alt="...">
+                        </div>
+                        <div class="col-md-8 bg-dark">
+                            <div class="card-body">
+                                <h5 class="card-title">Pulp Fiction</h5>
+                                <p class="card-text">Las vidas de dos mafiosos, un boxeador, la esposa de un gánster y
+                                    un par de bandidos se entrelazan en cuatro historias de violencia y redención.</p>
+                                <p class="card-text"><small class="text-muted">Click para ver mas </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-1" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="imagenes/blade-runner-poster.jpg" class="img-fluid rounded-start"
+                                alt="...">
+                        </div>
+                        <div class="col-md-8 bg-dark">
+                            <div class="card-body">
+                                <h5 class="card-title">Blade Runner 2049</h5>
+                                <p class="card-text">El descubrimiento por parte del joven blade runner K de un secreto oculto desde hace tiempo, le lleva a buscar al antiguo blade runner Rick Deckard, que lleva treinta años desaparecido.</p>
+                                <p class="card-text"><small class="text-muted">Click para ver mas </small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        
+    </div>
+
+
+
+
+
+
+
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

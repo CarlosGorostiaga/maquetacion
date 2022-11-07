@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src = index.js></script>
+
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Profesional-IMDB</title>
+    <link rel="shortcut icon" href="imagenes/IMDB_Logo_2016.svg.png" type="image/x-icon">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html">
+            <img src="imagenes/IMDB_Logo_2016.svg.png" alt="" class="d-inline-block align-text-top" style="height: 8vh">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Principal</a>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Link</a> -->
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <!-- <li><a class="dropdown-item" href="form">Professionals</a></li> -->
+                  <li><a class="dropdown-item" href="profesionales.html">Profesionales</a></li>
+                  <li><a class="dropdown-item" href="peliculas.html">Peliculas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="home.html">Principal</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar...">
+              <button class="btn btn-outline-warning text-light" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Título -->
+
+      <div class="container bg-warning text-dark mt-3">
+
+        <h2 style="padding-left: 5px;">Introduce datos necesarios para agregar un nuevo Profesional:</h2>
+    </div>
+
+
+
+      <!-- Container con cards de profesionales -->
+<div class="container" id="professionalsAre">
+
+
+</div>
+
+
+<div class="container bg-warning">
+
+<!-- FORM -->
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Nombre del Profesional</label>
+    <input type="text" class="form-control" id="name" placeholder="Nombre">
+</div>
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Edad</label>
+    <input type="text" class="form-control" id="age" placeholder="Introducir edad...">
+</div>
+
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Peso</label>
+    <input type="text" class="form-control" id="weight" placeholder="Introducir Peso...">
+</div>
+
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Altura</label>
+    <input type="text" class="form-control" id="height" placeholder="Introducir Altura">
+</div>
+
+<form>
+<label for="exampleFormControlInput1" class="form-label">¿ Sigue en Activo ?</label>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="retiredOptions" value=true>
+  <label class="form-check-label" for="flexRadioDefault1">
+    Si
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="retiredOptions" value=false>
+  <label class="form-check-label" for="flexRadioDefault2">
+    No
+  </label>
+</div>
+</form>
+
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Nacionalidad</label>
+  <input type="text" class="form-control" id="personNationality" placeholder="Nacionalidad">
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">¿ Cuantos premios Oscar ?</label>
+  <input type="text" class="form-control" id="oscars" placeholder="Introducir numero de premios (Ejemplo : 1)">
+</div>
+
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Profesion</label>
+  <input type="text" class="form-control" id="profession" placeholder="Director , Actor , Guionista">
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Foto</label>
+  <input type="text" class="form-control" id="pro-photo" placeholder="URL de la foto">
+</div>
+
+
+  <button type="button" class="btn btn-outline-dark" onclick="createNewPro()">Enviar Info</button>
+
+<br><br><br>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JS Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>
