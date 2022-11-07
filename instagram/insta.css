@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+body{
+    width: auto;
+    /* background-color: #ECF3FF; color de  boton entrar */
+    background-color:rgb(250, 248, 248);
+}
+
+
+.flex-container1{
+    /* border: 1px solid black; */
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 10vh;
+}
+ .iphoneDiv{
+    /* border: 1px solid black; */
+    width: 400px;
+    display: flex;
+    
+ }
+ .iphone{
+    display: flex;
+    width: 400px;
+    height: 600px;
+ }
+.boxForm{
+    /* border: 1px solid green; */
+    height: 590px;
+    width: 370px;
+    margin-left: 1%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.formDiv1{
+    border: 1px solid rgba(128, 128, 128, 0.501);
+    background-color: white;
+    width: 100%;
+    height: 69%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.logoInsta{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 25%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.form{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 34%;
+    justify-content: space-around;
+}
+.input{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 2%;
+    background-color: rgb(250, 248, 248);
+    border: 1px solid rgba(128, 128, 128, 0.501);
+    border-radius: 1%;
+}
+.buttonEnter{
+    background-color: #BFD7EA;
+    height: 50%;
+    font-weight: bold;
+    color: white;
+    border-radius: 1%;
+    border: 1px solid white;
+
+}
+.face{
+    color: #11478d;
+    font-weight: bold;
+    font-size:small;
+}
+.forgot{
+    font-size: small;
+    color: #11478d;
+}
+
+.formDiv2{
+    border: 1px solid rgba(128, 128, 128, 0.501);
+    background-color: white;
+    height: 10%;
+    margin-top: 4%;
+    margin-bottom: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+}
+.registro{
+    font-weight: bold;
+    color: rgba(2, 111, 254, 0.601);
+    
+}
+.descargas{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+/* 
+    border: 2px solid red; */
+
+    width: 100%;
+    height: 7%;
+}
+
+.img-store{
+    
+    width: 80%;
+
+}
+
+
+
+.footer{
+
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 15vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot1{
+    /* border: 1px solid green; */
+    display: flex;
+    width: 100%;
+    height: 70%;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.buttonsFoot{
+    margin: 0.5%;
+    font-size: small;
+    color: gray;
+}
+
+.foot2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+@media screen and (max-width:850px){
+    .iphoneDiv{
+        display: none;
+    }
+    .foot1{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+}
